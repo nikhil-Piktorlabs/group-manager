@@ -1,0 +1,144 @@
+{
+  "groups": [
+    {
+      "id": 1,
+      "name": "ABC Security Groups",
+      "owner": "John Smith",
+      "createdOn": "09/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 2,
+      "name": "A Team",
+      "owner": "Uche Ogbonna",
+      "createdOn": "08/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 3,
+      "name": "Ar Orange Crush",
+      "owner": "Siri Jackobsson",
+      "createdOn": "08/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 4,
+      "name": "C Security Groups",
+      "owner": "John Smith",
+      "createdOn": "09/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 5,
+      "name": "B Team",
+      "owner": "Uche Ogbonna",
+      "createdOn": "08/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 6,
+      "name": "Orange Crush",
+      "owner": "Siri Jackobsson",
+      "createdOn": "08/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 7,
+      "name": "D HRTeam",
+      "owner": "Sami Al Samad",
+      "createdOn": "10/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 8,
+      "name": "RasApp",
+      "owner": "Klavdia Dedova",
+      "createdOn": "11/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 9,
+      "name": "CBE",
+      "owner": "Uche Ogbonna",
+      "createdOn": "08/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 10,
+      "name": "Z Team",
+      "owner": "Siri Jackobsson",
+      "createdOn": "10/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 11,
+      "name": "ABC Security Groups",
+      "owner": "John Smith",
+      "createdOn": "09/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 12,
+      "name": "A Team",
+      "owner": "Uche Ogbonna",
+      "createdOn": "08/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 13,
+      "name": "Ar Orange Crush",
+      "owner": "Siri Jackobsson",
+      "createdOn": "08/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 14,
+      "name": "C Security Groups",
+      "owner": "John Smith",
+      "createdOn": "09/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 15,
+      "name": "B Team",
+      "owner": "Uche Ogbonna",
+      "createdOn": "08/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 16,
+      "name": "Orange Crush",
+      "owner": "Siri Jackobsson",
+      "createdOn": "08/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 17,
+      "name": "D HRTeam",
+      "owner": "Sami Al Samad",
+      "createdOn": "10/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 18,
+      "name": "RasApp",
+      "owner": "Klavdia Dedova",
+      "createdOn": "11/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 19,
+      "name": "CBE",
+      "owner": "Uche Ogbonna",
+      "createdOn": "08/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    },
+    {
+      "id": 20,
+      "name": "Z Team",
+      "owner": "Siri Jackobsson",
+      "createdOn": "10/13/2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam voluptatibus? Sunt accusamus, ipsa eum quisquam non necessitatibus mollitia vitae ipsam similique rem perspiciatis tenetur porro, cum obcaecati facere eius voluptatum beatae iure soluta repudiandae voluptatem repellat laboriosam vel! Provident officiis sint modi fugiat esse ad vel repellendus beatae neque."
+    }
+  ]
+}

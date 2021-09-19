@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Header from "./components/header";
+import SideBar from "./components/sideBar";
+import Section from "./components/section";
 
 function App() {
+  const [group, setGroup] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Header />
+      <main className="grid">
+        <SideBar group={group} setGroup={setGroup} />
+        <Section group={group} />
+      </main>
+    </React.Fragment>
   );
 }
 
