@@ -1,0 +1,27 @@
+.navigation {
+  color: #46475c;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.navigation__item {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  margin: 0px -10px;
+  padding: 13px 0px 13px 20px;
+}
+
+.navigation__item--active {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.navigation__image {
+  height: 15px;
+  width: 15px;
+}
+
+.navigation__text {
+  margin-left: 10px;
+}

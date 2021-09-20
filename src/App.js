@@ -1,19 +1,15 @@
-import React, { useState } from "react";
-import Header from "./components/header";
-import SideBar from "./components/sideBar";
-import Section from "./components/section";
+import React from "react";
+import TopBar from "./components/topbar/topBar";
+import SideBar from "./components/sidebar/sideBar";
+import Section from "./components/section/section";
 
 function App() {
-  const [group, setGroup] = useState(true);
-
   return (
-    <React.Fragment>
-      <Header />
-      <main className="grid">
-        <SideBar group={group} setGroup={setGroup} />
-        <Section group={group} />
-      </main>
-    </React.Fragment>
+    <div className="grid grid--main">
+      <TopBar />
+      <SideBar />
+      <Section />
+    </div>
   );
 }
 

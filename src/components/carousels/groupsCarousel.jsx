@@ -1,16 +1,17 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
-import Card from "./card";
+import Card from "../card/card";
 import "react-multi-carousel/lib/styles.css";
+import "./carousel.css";
 
 const responsive = {
   extraLargeDesktop: {
-    breakpoint: { max: 4000, min: 1300 },
+    breakpoint: { max: 4000, min: 1480 },
     items: 5,
     partialVisibilityGutter: 30,
   },
   largeDesktop: {
-    breakpoint: { max: 1300, min: 1200 },
+    breakpoint: { max: 1480, min: 1200 },
     items: 4,
     partialVisibilityGutter: 30,
   },
@@ -29,22 +30,32 @@ const responsive = {
     items: 2,
     partialVisibilityGutter: 0,
   },
-  mobile: {
-    breakpoint: { max: 665, min: 0 },
+  mobile3: {
+    breakpoint: { max: 665, min: 620 },
     items: 1,
-    partialVisibilityGutter: 10,
+    partialVisibilityGutter: 180,
+  },
+  mobile2: {
+    breakpoint: { max: 620, min: 600 },
+    items: 1,
+    partialVisibilityGutter: 130,
+  },
+  mobile1: {
+    breakpoint: { max: 600, min: 0 },
+    items: 1,
+    partialVisibilityGutter: 0,
   },
 };
 
 const ButtonGroup = ({ next, previous }) => {
   return (
-    <header className="recommendations__heading">
+    <header className="carousel__heading">
       <h4>RECOMMENDED GROUPS</h4>
       <span>
-        <button className="recommendations__button" onClick={() => previous()}>
+        <button className="carousel__button" onClick={() => previous()}>
           <i className="fa fa-angle-left" aria-hidden="true"></i>
         </button>
-        <button className="recommendations__button" onClick={() => next()}>
+        <button className="carousel__button" onClick={() => next()}>
           <i className="fa fa-angle-right" aria-hidden="true"></i>
         </button>
       </span>
@@ -52,9 +63,9 @@ const ButtonGroup = ({ next, previous }) => {
   );
 };
 
-const Recommendations = ({ data }) => {
+const GroupsCarousel = ({ data }) => {
   return (
-    <article className="recommendations">
+    <article className="grid grid--carousel">
       <Carousel
         arrows={false}
         renderButtonGroupOutside={true}
@@ -70,4 +81,4 @@ const Recommendations = ({ data }) => {
   );
 };
 
-export default Recommendations;
+export default GroupsCarousel;

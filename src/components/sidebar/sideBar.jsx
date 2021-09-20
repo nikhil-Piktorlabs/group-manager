@@ -1,13 +1,17 @@
 import React from "react";
-import groupLogo from "../images/groupLogo.png";
-import packLogo from "../images/packLogo.png";
+import groupLogo from "../../images/groupLogo.png";
+import packLogo from "../../images/packLogo.png";
+import "./sidebar.css";
+import "./navigation.css";
 
-const SideBar = ({ group, setGroup }) => {
+const SideBar = () => {
   return (
     <aside className="sidebar">
       <div className="sidebar__item">
         <h3>YOUR GROUPS/PACKS</h3>
-        <p>You don't have access to anything yet</p>
+        <p className="sidebar__message">
+          You don't have access to anything yet
+        </p>
       </div>
       <hr />
       <div className="sidebar__item">
@@ -30,25 +34,17 @@ const SideBar = ({ group, setGroup }) => {
       <hr />
       <div className="sidebar__item">
         <h3>YOUR APPROVALS</h3>
-        <p>You don't have any approvals yet</p>
+        <p className="sidebar__message">You don't have any approvals yet</p>
       </div>
       <hr />
       <nav className="navigation">
-        <div
-          className={`navigation__item${
-            group ? " navigation__item--active" : ""
-          }`}
-        >
-          <img src={groupLogo} alt="..." />
-          <span onClick={() => setGroup(true)}>ALL GROUPS</span>
+        <div>
+          <img className="navigation__image" src={groupLogo} alt="..." />
+          <span className="navigation__text">ALL GROUPS</span>
         </div>
-        <div
-          className={`navigation__item${
-            !group ? " navigation__item--active" : ""
-          }`}
-        >
-          <img src={packLogo} alt="..." />
-          <span onClick={() => setGroup(false)}>ALL PACKS</span>
+        <div>
+          <img className="navigation__image" src={packLogo} alt="..." />
+          <span className="navigation__text">ALL PACKS</span>
         </div>
       </nav>
     </aside>

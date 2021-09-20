@@ -1,5 +1,5 @@
 import React from "react";
-import sortIcon from "../../images/sort.png";
+import sortIcon from "../../../images/sort.png";
 
 function raiseSort(path, sortColumn, onSort) {
   const newSortColumn = sortColumn;
@@ -18,7 +18,7 @@ function renderSortIcon(column, sortColumn) {
 
   if (column.path !== path) return null;
 
-  return <img src={sortIcon} alt="" />;
+  return <img className="table__heading-icon" src={sortIcon} alt="" />;
 }
 
 const TableHeader = ({ columns, sortColumn, onSort }) => {
@@ -31,7 +31,7 @@ const TableHeader = ({ columns, sortColumn, onSort }) => {
             onClick={() => {
               if (column.path) raiseSort(column.path, sortColumn, onSort);
             }}
-            className={`table__cell${
+            className={`table__cell table__cell--sort${
               column.center ? " table__cell--center" : ""
             }`}
           >

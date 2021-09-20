@@ -1,12 +1,13 @@
 import React from "react";
 import TableBody from "./tableBody";
 import TableHeader from "./tableHeader";
+import "./table.css";
 
-const Table = ({ data, columns, sortColumn, onSort, group }) => {
+const Table = ({ data, columns, sortColumn, onSort }) => {
   return (
     <table className="table">
       <TableHeader columns={columns} sortColumn={sortColumn} onSort={onSort} />
-      <TableBody data={data} columns={columns} group={group} />
+      <TableBody data={data} columns={columns} />
     </table>
   );
 };

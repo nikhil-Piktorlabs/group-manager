@@ -1,8 +1,7 @@
 import React from "react";
-import user from "../../images/user.png";
-import groupLogo from "../../images/groupLogo.png";
-import packLogo from "../../images/packLogo.png";
 import _ from "lodash";
+import user from "../../../images/user.png";
+import groupLogo from "../../../images/groupLogo.png";
 
 function renderCell(item, column) {
   if (column.content) return column.content;
@@ -24,15 +23,16 @@ function renderCell(item, column) {
   return _.get(item, column.path);
 }
 
-function renderImage(column, group) {
-  if (column.path === "owner") return <img src={user} alt="..." />;
+function renderImage(column) {
+  if (column.path === "owner")
+    return <img className="table__body-icon" src={user} alt="..." />;
   else if (column.path === "name")
-    return <img src={group ? groupLogo : packLogo} alt="" />;
+    return <img className="table__body-icon" src={groupLogo} alt="..." />;
 }
 
-const TableBody = ({ data, columns, group }) => {
+const TableBody = ({ data, columns }) => {
   return (
-    <tbody className="table__body">
+    <tbody>
       {data.map((item) => (
         <tr className="table__row" key={item.id}>
           {columns.map((column, index) => (
@@ -42,7 +42,7 @@ const TableBody = ({ data, columns, group }) => {
                 column.center ? " table__cell--center" : ""
               }`}
             >
-              {renderImage(column, group)}
+              {renderImage(column)}
               {renderCell(item, column)}
             </td>
           ))}

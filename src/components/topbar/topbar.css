@@ -1,0 +1,30 @@
+.topbar {
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 1;
+}
+
+.topbar__link {
+  text-decoration: none;
+}
+
+.topbar__user {
+  align-items: flex-end;
+  color: #252a31;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.topbar__user-name {
+  font-size: 1.4rem;
+}
+
+.topbar__user-network {
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: 0.5;
+}

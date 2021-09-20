@@ -1,0 +1,43 @@
+.card {
+  align-items: center;
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5px;
+  width: 200px;
+}
+
+.card__image {
+  height: 25px;
+  width: 25px;
+}
+
+.card__info {
+  align-items: flex-start;
+  color: #4a4a4a;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.card__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 110px;
+}
+
+.card__text--primary {
+  font-weight: bold;
+}
+
+.card__text--secondary {
+  font-size: 1.1rem;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: calc(100% - 10px);
+  }
+}

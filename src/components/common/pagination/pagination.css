@@ -1,0 +1,16 @@
+.pagination {
+  align-items: center;
+  bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 40px;
+}
+
+.pagination__btn {
+  cursor: pointer;
+}
+
+.pagination__btn--active {
+  color: var(--color-heading);
+}
