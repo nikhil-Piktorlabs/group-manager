@@ -33,7 +33,7 @@ const TableHeader = ({ columns, sortColumn, onSort }) => {
             }}
             className={`table__cell table__cell--sort${
               column.center ? " table__cell--center" : ""
-            }`}
+            }${column.checkbox ? " table__cell--small" : ""}`}
           >
             {column.label}
             {renderSortIcon(column, sortColumn)}

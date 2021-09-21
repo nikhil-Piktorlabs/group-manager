@@ -4,9 +4,10 @@ import packLogo from "../../images/packLogo.png";
 import "./sidebar.css";
 import "./navigation.css";
 
-const SideBar = () => {
+const SideBar = ({ sideBar }) => {
+  console.log(window.location.pathname);
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar${sideBar ? " sidebar--expanded" : ""}`}>
       <div className="sidebar__item">
         <h3>YOUR GROUPS/PACKS</h3>
         <p className="sidebar__message">
@@ -38,14 +39,26 @@ const SideBar = () => {
       </div>
       <hr />
       <nav className="navigation">
-        <div>
+        <a
+          href="/"
+          className={`navigation__item${
+            window.location.pathname === "/" ? " navigation__item--active" : ""
+          }`}
+        >
           <img className="navigation__image" src={groupLogo} alt="..." />
           <span className="navigation__text">ALL GROUPS</span>
-        </div>
-        <div>
+        </a>
+        <a
+          href="/packs"
+          className={`navigation__item${
+            window.location.pathname === "/packs"
+              ? " navigation__item--active"
+              : ""
+          }`}
+        >
           <img className="navigation__image" src={packLogo} alt="..." />
           <span className="navigation__text">ALL PACKS</span>
-        </div>
+        </a>
       </nav>
     </aside>
   );

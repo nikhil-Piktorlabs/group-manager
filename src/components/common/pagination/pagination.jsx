@@ -7,7 +7,7 @@ const Pagination = ({ itemsCount, pageSize, currentPage, onPageChange }) => {
   const pages = _.range(1, pagesCount + 1);
 
   return (
-    <nav className="pagination">
+    <nav className="pagination pagination--absolute">
       Showing {(currentPage - 1) * pageSize + 1} -{" "}
       {currentPage * pageSize > itemsCount
         ? itemsCount

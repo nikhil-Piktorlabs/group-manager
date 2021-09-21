@@ -12,10 +12,13 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 12px;
 }
 
 .table-box__table {
+  height: 362px;
   overflow-x: auto;
+  overflow-y: auto;
 }
 
 @media screen and (max-width: 600px) {

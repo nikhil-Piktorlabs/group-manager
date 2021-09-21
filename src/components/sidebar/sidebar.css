@@ -2,6 +2,7 @@
   background: #fff;
   box-shadow: 0 1px 4px 0 #dfe3e7;
   padding: 0px 10px;
+  z-index: 1;
 }
 
 .sidebar__item {
@@ -14,8 +15,16 @@
   opacity: 0.4;
 }
 
-@media screen and (max-width: 335px) {
+@media screen and (max-width: 550px) {
   .sidebar {
-    margin-top: 65px;
+    display: none;
+  }
+
+  .sidebar--expanded {
+    display: block;
+    position: absolute;
+    top: 60px;
+    min-height: 745px;
+    height: 100vh;
   }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import _ from "lodash";
 import user from "../../../images/user.png";
 import groupLogo from "../../../images/groupLogo.png";
+import packLogo from "../../../images/packLogo.png";
 
 function renderCell(item, column) {
   if (column.content) return column.content;
@@ -26,8 +27,10 @@ function renderCell(item, column) {
 function renderImage(column) {
   if (column.path === "owner")
     return <img className="table__body-icon" src={user} alt="..." />;
-  else if (column.path === "name")
+  else if (column.label === "GROUP NAME")
     return <img className="table__body-icon" src={groupLogo} alt="..." />;
+  else if (column.label === "PACK NAME")
+    return <img className="table__body-icon" src={packLogo} alt="..." />;
 }
 
 const TableBody = ({ data, columns }) => {
@@ -40,7 +43,7 @@ const TableBody = ({ data, columns }) => {
               key={index}
               className={`table__cell${
                 column.center ? " table__cell--center" : ""
-              }`}
+              }${column.checkbox ? " table__cell--small" : ""}`}
             >
               {renderImage(column)}
               {renderCell(item, column)}
