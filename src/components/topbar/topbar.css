@@ -66,3 +66,9 @@
     padding-left: 40px;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .topbar {
+    position: fixed;
+  }
+}

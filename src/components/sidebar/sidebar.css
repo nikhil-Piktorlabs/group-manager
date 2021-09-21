@@ -17,14 +17,14 @@
 
 @media screen and (max-width: 550px) {
   .sidebar {
-    display: none;
+    position: fixed;
+    height: 100%;
+    left: -270px;
+    transition: left 0.7s;
+    margin-top: 60px;
   }
 
   .sidebar--expanded {
-    display: block;
-    position: absolute;
-    top: 60px;
-    min-height: 745px;
-    height: 100vh;
+    left: 0px;
   }
 }

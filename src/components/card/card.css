@@ -18,13 +18,15 @@
   color: #4a4a4a;
   display: inline-flex;
   flex-direction: column;
+  margin-right: auto;
+  margin-left: 10px;
 }
 
 .card__text {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 110px;
+  width: 130px;
 }
 
 .card__text--primary {
@@ -39,5 +41,11 @@
 @media screen and (max-width: 600px) {
   .card {
     width: calc(100% - 10px);
+  }
+}
+
+@media screen and (min-width: 655px) {
+  .card {
+    width: calc(100% - 15px);
   }
 }

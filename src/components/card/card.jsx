@@ -11,7 +11,7 @@ const Card = ({ item }) => {
         <span className="card__text card__text--secondary">{item.owner}</span>
       </div>
       <button className="btn btn--circle">
-        <i className="fa fa-plus fa-lg" aria-hidden="true"></i>
+        <span className="btn__text">+</span>
       </button>
     </div>
   );

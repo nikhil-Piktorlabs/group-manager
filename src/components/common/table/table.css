@@ -1,7 +1,6 @@
 .table {
   border-collapse: collapse;
-  margin: 0px 0 15px 0px;
-  min-width: 1198px;
+  min-width: 600px;
   width: 100%;
 }
 
@@ -9,15 +8,21 @@
   background: #f8fafb;
   color: #000;
   font-size: 1rem;
+  position: sticky;
+  top: 0;
+  box-shadow: inset 0 1px 0 #ddd, inset 0 -1px 0 #ddd;
 }
 
-.table__row {
+.table__body .table__row {
   border: solid #ddd;
   border-width: 1px 0px;
 }
 
 .table__cell {
   padding: 5px 0px 5px 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   text-align: left;
   width: 24%;
 }

@@ -35,7 +35,7 @@ function renderImage(column) {
 
 const TableBody = ({ data, columns }) => {
   return (
-    <tbody>
+    <tbody className="table__body">
       {data.map((item) => (
         <tr className="table__row" key={item.id}>
           {columns.map((column, index) => (
