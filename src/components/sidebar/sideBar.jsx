@@ -5,7 +5,6 @@ import "./sidebar.css";
 import "./navigation.css";
 
 const SideBar = ({ sideBar }) => {
-  console.log(window.location.pathname);
   return (
     <aside className={`sidebar${sideBar ? " sidebar--expanded" : ""}`}>
       <div className="sidebar__item">
