@@ -64,6 +64,7 @@
   .topbar__start {
     display: flex;
     padding-left: 40px;
+    align-items: center;
   }
 }
 
