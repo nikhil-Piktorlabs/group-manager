@@ -8,7 +8,7 @@
 }
 
 .topbar__collapsible {
-  margin-left: 20px;
+  margin-left: 2rem;
   cursor: pointer;
 }
 
@@ -34,6 +34,11 @@
   margin-left: auto;
 }
 
+.topbar__logo {
+  height: 3.5rem;
+  width: 4.7rem;
+}
+
 .topbar__user {
   align-items: flex-end;
   color: #252a31;
@@ -52,7 +57,9 @@
 }
 
 .topbar__user-image {
-  margin-left: 8px;
+  margin-left: .8rem;
+  height: 4.4rem;
+  width: 4.6rem;
 }
 
 @media screen and (min-width: 550px) {
@@ -63,7 +70,7 @@
 
   .topbar__start {
     display: flex;
-    padding-left: 40px;
+    padding-left: 4rem;
     align-items: center;
   }
 }

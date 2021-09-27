@@ -9,8 +9,8 @@
   color: #46475c;
   cursor: pointer;
   display: flex;
-  margin: 0px -10px;
-  padding: 13px 0px 13px 20px;
+  margin: 0 -1rem;
+  padding: 1.3rem 0rem 1.3rem 2.0rem;
   text-decoration: none;
 }
 
@@ -25,5 +25,5 @@
 }
 
 .navigation__text {
-  margin-left: 10px;
+  margin-left: 1rem;
 }

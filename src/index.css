@@ -18,7 +18,37 @@ html {
 
 @media screen and (min-width: 2500px) {
   html {
+    font-size: 120%;
+  }
+
+
+  @media screen and (min-width: 600px) and (min-height: 1000px) {
+    html {
+      font-size: 75%;
+    }
+  }}
+
+@media screen and (min-width: 800px) and (min-height: 1000px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  html {
     font-size: 110%;
+  }
+}
+
+@media screen and (min-width: 4000px) {
+  html {
+    font-size: 170%;
+  }
+}
+
+@media screen and (min-width: 6000px) {
+  html {
+    font-size: 215%;
   }
 }
 
@@ -61,10 +91,10 @@ hr {
 /* Badge */
 
 .badge {
-  border-radius: 12px;
+  border-radius: 1.2rem;
   color: #fff;
   font-weight: bold;
-  padding: 3px 7px 2px 8px;
+  padding: .3rem .7rem .2rem .8rem;
 }
 
 .badge--primary {
@@ -79,7 +109,7 @@ hr {
 
 .btn {
   background: #fff;
-  border: solid 1px;
+  border: solid .1rem;
   color: var(--color-heading);
   cursor: pointer;
   transition: 0.5s;
@@ -88,7 +118,7 @@ hr {
 .btn--block {
   border-radius: 0.3rem;
   font-weight: bold;
-  padding: 6px 22px 5px 23.1px;
+  padding: .6rem 2.2rem .5rem 2.31rem;
   font-size: 1.2rem;
 }
 
@@ -156,7 +186,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  margin: 7px 0px 0px;
+  margin: .7rem 0 0;
 }
 
 .list__request--not-selected {
@@ -167,8 +197,8 @@ hr {
 
 .vl {
   border: 0.1px solid #979797;
-  height: 20px;
-  margin: 0px 5px 0 5px;
+  height: 2rem;
+  margin: 0 .5rem;
   opacity: 0.2;
 }
 
@@ -180,12 +210,12 @@ hr {
 
 .input-group {
   background-color: #fff;
-  border-radius: 3px;
-  border: solid 2px #dee3e6;
+  border-radius: .3rem;
+  border: solid .2rem #dee3e6;
   display: flex;
   font-size: 1.2rem;
   opacity: 0.5;
-  padding: 8px;
+  padding: .8rem;
 }
 
 .input-group .input {
@@ -210,7 +240,7 @@ hr {
 }
 
 .grid--carousel {
-  grid-template: 35px 65px / 1fr;
+  grid-template: 3.5rem 6.5rem / 1fr;
 }
 
 .grid__topbar {
@@ -239,12 +269,8 @@ hr {
   .grid--main {
     grid-template-rows: 8% 1fr;
   }
-
-  .grid--carousel {
-    grid-template-rows: 35px 80px;
-    gap: 5px;
-  }
 }
+
 
 /* checkbox */
 

@@ -15,7 +15,7 @@ const TopBar = ({ sideBar, setSideBar }) => {
         <i className="fa fa-bars fa-lg icon"></i>
       </div>
       <a className="topbar__link topbar__start" href="/">
-        <img src={cloud} alt="..." />
+        <img className='topbar__logo' src={cloud} alt="..." />
         <h2>
           CLOUD <span className="topbar__heading-access">ACCESS</span>
         </h2>

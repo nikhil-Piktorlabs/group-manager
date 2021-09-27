@@ -1,11 +1,11 @@
 .card {
   align-items: center;
   background: #fff;
-  border-radius: 4rem;
+  border-radius: .4rem;
   display: flex;
   justify-content: space-between;
-  padding: 5rem 5px;
-  width: 200px;
+  padding: 1.5rem .5rem;
+  width: 20rem;
 }
 
 .card__image {
@@ -19,14 +19,14 @@
   display: inline-flex;
   flex-direction: column;
   margin-right: auto;
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 
 .card__text {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 130px;
+  width: 100%;
 }
 
 .card__text--primary {
@@ -56,9 +56,15 @@
   }
 }
 
-@media screen and (min-width: 2500px) {
-  
-.card__text {
-  width: 250px;
+
+@media screen and (min-width: 3000px) {
+  .card {
+    width: calc(100% - 40px);
+  }
 }
+
+@media screen and (min-width: 4000px) {
+  .card {
+    width: calc(100% - 50px);
+  }
 }

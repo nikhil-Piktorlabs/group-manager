@@ -5,28 +5,18 @@ import "react-multi-carousel/lib/styles.css";
 import "./carousel.css";
 
 const responsive = {
-  extraLargeDesktop2: {
-    breakpoint: { max: 4000, min: 2000 },
-    items: 6,
-    partialVisibilityGutter: 0,
-  },
-  extraLargeDesktop1: {
-    breakpoint: { max: 2000, min: 1480 },
+  extraLargeDesktop: {
+    breakpoint: { max: 7000, min: 2000 },
     items: 5,
     partialVisibilityGutter: 30,
   },
   largeDesktop: {
-    breakpoint: { max: 1480, min: 1200 },
+    breakpoint: { max: 2000, min: 1200 },
     items: 4,
-    partialVisibilityGutter: 30,
-  },
-  desktop: {
-    breakpoint: { max: 1200, min: 1100 },
-    items: 3,
-    partialVisibilityGutter: 50,
+    partialVisibilityGutter: 0,
   },
   tablet2: {
-    breakpoint: { max: 1100, min: 925 },
+    breakpoint: { max: 1200, min: 925 },
     items: 2,
     partialVisibilityGutter: 90,
   },

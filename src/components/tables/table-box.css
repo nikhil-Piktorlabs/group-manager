@@ -2,8 +2,8 @@
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 1px 5px 0 rgba(126, 142, 177, 0.3);
-  margin-top: 14px;
-  padding: 25.5px 25.5px 5px 25.5px;
+  margin-top: 1.4rem;
+  padding: 2.55rem 2.55rem .5rem 2.55rem;
   position: relative;
 }
 
@@ -11,7 +11,7 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
 }
 
 .table-box__table {
@@ -31,12 +31,12 @@
 
 @media screen and (max-width: 700px) {
   .table-box {
-    padding: 25.5px 10px;
+    padding: 2.55rem 1rem;
   }
 }
 
 @media screen and (max-width: 550px) {
   .table-box {
-    margin-bottom: 14px;
+    margin-bottom: 1.4rem;
   }
 }
