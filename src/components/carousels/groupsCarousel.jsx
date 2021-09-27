@@ -5,8 +5,13 @@ import "react-multi-carousel/lib/styles.css";
 import "./carousel.css";
 
 const responsive = {
-  extraLargeDesktop: {
-    breakpoint: { max: 4000, min: 1480 },
+  extraLargeDesktop2: {
+    breakpoint: { max: 4000, min: 2000 },
+    items: 6,
+    partialVisibilityGutter: 0,
+  },
+  extraLargeDesktop1: {
+    breakpoint: { max: 2000, min: 1480 },
     items: 5,
     partialVisibilityGutter: 30,
   },
@@ -53,10 +58,10 @@ const ButtonGroup = ({ next, previous }) => {
       <h4>RECOMMENDED GROUPS</h4>
       <span>
         <button className="carousel__button" onClick={() => previous()}>
-          <i className="fa fa-angle-left" aria-hidden="true"></i>
+          <i className="fa fa-angle-left fa-lg" aria-hidden="true"></i>
         </button>
         <button className="carousel__button" onClick={() => next()}>
-          <i className="fa fa-angle-right" aria-hidden="true"></i>
+          <i className="fa fa-angle-right fa-lg" aria-hidden="true"></i>
         </button>
       </span>
     </header>

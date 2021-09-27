@@ -48,7 +48,16 @@
 
 .table__body-icon {
   float: left;
-  height: 13px;
-  margin-right: 5px;
-  width: 13px;
+  height: 1.3rem;
+  margin-right: .5rem;
+  width: 1.3rem;
+}
+
+@media screen and (min-width: 1800px) {
+  .table__cell {
+    padding: 10px 0px 10px 8px;
+  }
+  .table__cell--sort {
+    padding: 28px 0px 28px 8px;
+  }
 }

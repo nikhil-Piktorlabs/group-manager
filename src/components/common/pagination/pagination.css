@@ -2,12 +2,7 @@
   align-items: center;
   display: flex;
   justify-content: flex-end;
-}
-
-.pagination--absolute {
-  bottom: 10px;
-  position: absolute;
-  right: 40px;
+  margin-top: 10px;
 }
 
 .pagination__btn {

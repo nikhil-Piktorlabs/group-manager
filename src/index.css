@@ -10,6 +10,18 @@ html {
   font-size: 62.5%;
 }
 
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  html {
+    font-size: 110%;
+  }
+}
+
 body {
   background: var(--color-background);
   color: var(--color-body);
@@ -77,15 +89,16 @@ hr {
   border-radius: 0.3rem;
   font-weight: bold;
   padding: 6px 22px 5px 23.1px;
+  font-size: 1.2rem;
 }
 
 .btn--circle {
   align-items: center;
   border-radius: 100%;
   display: flex;
-  height: 25px;
+  height: 2.5rem;
   justify-content: center;
-  width: 25px;
+  width: 2.5rem;
 }
 
 .btn__text {
@@ -120,9 +133,9 @@ hr {
   background: var(--color-background);
   border-radius: 100%;
   display: inline-flex;
-  height: 30px;
+  height: 3rem;
   justify-content: center;
-  width: 30px;
+  width: 3rem;
 }
 
 /* List */
@@ -178,6 +191,7 @@ hr {
 .input-group .input {
   border: 0;
   flex-grow: 1;
+  font-size: 1.2rem;
 }
 
 .input-group .icon {
@@ -219,4 +233,22 @@ hr {
   .grid--main {
     grid-template-columns: 15% 85%;
   }
+}
+
+@media screen and (min-width: 1800px) {
+  .grid--main {
+    grid-template-rows: 8% 1fr;
+  }
+
+  .grid--carousel {
+    grid-template-rows: 35px 80px;
+    gap: 5px;
+  }
+}
+
+/* checkbox */
+
+input[type='checkbox'] {
+  width: 1rem;
+  height: 1rem;
 }

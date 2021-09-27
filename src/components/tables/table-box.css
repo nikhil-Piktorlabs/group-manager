@@ -2,9 +2,8 @@
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 1px 5px 0 rgba(126, 142, 177, 0.3);
-  height: 440px;
   margin-top: 14px;
-  padding: 25.5px;
+  padding: 25.5px 25.5px 5px 25.5px;
   position: relative;
 }
 
@@ -16,17 +15,14 @@
 }
 
 .table-box__table {
-  height: 362px;
+  min-height: 362px;
+  height: calc(100vh - 415px);
   overflow-x: auto;
   overflow-y: auto;
 }
 
 @media screen and (max-width: 370px),
   (min-width: 550px) and (max-width: 600px) {
-  .table-box {
-    height: 480px;
-  }
-
   .table-box__heading {
     flex-direction: column;
     align-items: stretch;

@@ -1,16 +1,16 @@
 .card {
   align-items: center;
   background: #fff;
-  border-radius: 4px;
+  border-radius: 4rem;
   display: flex;
   justify-content: space-between;
-  padding: 15px 5px;
+  padding: 5rem 5px;
   width: 200px;
 }
 
 .card__image {
-  height: 25px;
-  width: 25px;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .card__info {
@@ -48,4 +48,17 @@
   .card {
     width: calc(100% - 15px);
   }
+}
+
+@media screen and (min-width: 1900px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  
+.card__text {
+  width: 250px;
+}
 }
