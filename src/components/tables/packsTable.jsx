@@ -26,9 +26,10 @@ const PacksTable = () => {
 
   const columns = [
     {
-      label: <input type="checkbox" />,
-      content: <input type="checkbox" />,
+      label: <input className="checkbox" type="checkbox" />,
+      content: <input className="checkbox" type="checkbox" />,
       checkbox: true,
+      center: true,
     },
     { path: "name", label: "PACK NAME", link1: true },
     { path: "owner", label: "PACK OWNER", link2: true },
@@ -41,10 +42,20 @@ const PacksTable = () => {
   ];
   const pageSize = 10;
 
-  function handleSearch(query) {
+  function debounce(func, time) {
+    let timer;
+    return (...args) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        func.apply(this, args);
+      }, time);
+    };
+  }
+
+  const handleSearch = debounce(function (query) {
     setSearchQuery(query);
     setPage(1);
-  }
+  }, 1000);
 
   const { result, count } = getPagedData(
     packs,

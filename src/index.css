@@ -52,6 +52,24 @@ html {
   }
 }
 
+@media screen and (min-height: 1500px) {
+  html {
+    font-size: 110%;
+  }
+}
+
+@media screen and (min-height: 2000px) {
+  html {
+    font-size: 170%;
+  }
+}
+
+@media screen and (min-height: 3000px) {
+  html {
+    font-size: 220%;
+  }
+}
+
 body {
   background: var(--color-background);
   color: var(--color-body);

@@ -10,7 +10,7 @@ const Pagination = ({ itemsCount, pageSize, currentPage, onPageChange }) => {
 
   function handleGoto(target) {
     if (target.charCode === 13) {
-      if (goto === "") return;
+      if (goto === "" || parseInt(goto) <= 0) return;
       onPageChange(parseInt(goto));
     }
   }
