@@ -2,7 +2,7 @@ import React from "react";
 import "./card.css";
 import groupLogo from "../../images/groupLogo.png";
 
-const Card = ({ item }) => {
+const Card = ({ item, scroll }) => {
   return (
     <div className="card">
       <img src={groupLogo} alt="..." className="card__image" />

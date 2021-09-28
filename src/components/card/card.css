@@ -6,6 +6,7 @@
   justify-content: space-between;
   padding: 1.5rem 0.5rem;
   width: 21rem;
+  margin-right: 0.5rem;
 }
 
 .card__image {
@@ -37,22 +38,4 @@
 .card__text--secondary {
   font-size: 1.1rem;
   opacity: 0.5;
-}
-
-@media screen and (max-width: 610px) {
-  .card {
-    width: calc(100% - 10px);
-  }
-}
-
-@media screen and (min-width: 611px) and (max-width: 1300px) {
-  .card {
-    width: calc(100% - 20px);
-  }
-}
-
-@media screen and (min-width: 1301px) and (max-width: 1500px) {
-  .card {
-    width: calc(100% - 30px);
-  }
 }

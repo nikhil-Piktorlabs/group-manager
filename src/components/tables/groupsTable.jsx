@@ -4,6 +4,7 @@ import SearchBox from "../common/searchBox";
 import Table from "../common/table/table";
 import Pagination from "../common/pagination/pagination";
 import { paginate } from "../../utils/paginate";
+import { debounce } from "../../utils/debounce";
 import { groups } from "../../data/groups.json";
 import "./table-box.css";
 
@@ -42,16 +43,6 @@ const GroupsTable = () => {
   ];
 
   const pageSize = 10;
-
-  function debounce(func, time) {
-    let timer;
-    return (...args) => {
-      clearTimeout(timer);
-      timer = setTimeout(() => {
-        func.apply(this, args);
-      }, time);
-    };
-  }
 
   const handleSearch = debounce(function (query) {
     setSearchQuery(query);
