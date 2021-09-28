@@ -1,24 +1,25 @@
 .topbar {
   align-items: center;
   background: #fff;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.1rem 0.4rem 0 rgba(0, 0, 0, 0.1);
   display: flex;
   width: 100%;
   z-index: 2;
 }
 
 .topbar__collapsible {
-  margin-left: 2rem;
-  cursor: pointer;
+  display: none;
+  margin: 0;
+}
+
+.topbar__start {
+  display: flex;
+  padding-left: 4rem;
+  align-items: center;
 }
 
 .topbar__heading-access {
   color: #3e3e3e;
-}
-
-.topbar__start {
-  display: none;
-  padding-left: 0px;
 }
 
 .topbar__link {
@@ -57,26 +58,24 @@
 }
 
 .topbar__user-image {
-  margin-left: .8rem;
+  margin-left: 0.8rem;
   height: 4.4rem;
   width: 4.6rem;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (max-width: 767px) {
+  .topbar {
+    position: fixed;
+  }
+
   .topbar__collapsible {
-    display: none;
-    margin: 0;
+    display: block;
+    margin-left: 2rem;
+    cursor: pointer;
   }
 
   .topbar__start {
-    display: flex;
-    padding-left: 4rem;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .topbar {
-    position: fixed;
+    display: none;
+    padding-left: 0;
   }
 }

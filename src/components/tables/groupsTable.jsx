@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import _ from "lodash";
 import SearchBox from "../common/searchBox";
 import Table from "../common/table/table";
@@ -23,13 +23,13 @@ const GroupsTable = () => {
   const [currentPage, setPage] = useState(1);
   const [sortColumn, setSortColumn] = useState({ path: "name", order: "asc" });
   const [searchQuery, setSearchQuery] = useState("");
-  const [pageSize, setPageSize] = useState(10);
 
   const columns = [
     {
-      label: <input type="checkbox" />,
-      content: <input type="checkbox" />,
-      checkbox: true, center: true
+      label: <input className="checkbox" type="checkbox" />,
+      content: <input className="checkbox" type="checkbox" />,
+      checkbox: true,
+      center: true,
     },
     { path: "name", label: "GROUP NAME", link1: true },
     { path: "owner", label: "GROUP OWNER", link2: true },
@@ -41,19 +41,22 @@ const GroupsTable = () => {
     },
   ];
 
-  useEffect(()=>{
-    const height = document.body.querySelector('.table-box__table').clientHeight;
-    console.log(height)
-    if(height> 465)
-      setPageSize(18);
-      else
-      setPageSize(10);
-  },[])
+  const pageSize = 10;
 
-  function handleSearch(query) {
+  function debounce(func, time) {
+    let timer;
+    return (...args) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        func.apply(this, args);
+      }, time);
+    };
+  }
+
+  const handleSearch = debounce(function (query) {
     setSearchQuery(query);
     setPage(1);
-  }
+  }, 1000);
 
   const { result, count } = getPagedData(
     groups,
@@ -67,11 +70,7 @@ const GroupsTable = () => {
     <article className="table-box">
       <div className="table-box__heading">
         <h3>ALL GROUPS</h3>
-        <SearchBox
-          value={searchQuery}
-          onChange={handleSearch}
-          placeholder="Find a group"
-        />
+        <SearchBox onChange={handleSearch} placeholder="Find a group" />
       </div>
       <div className="table-box__table">
         <Table

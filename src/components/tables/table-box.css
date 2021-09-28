@@ -1,9 +1,9 @@
 .table-box {
   background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 1px 5px 0 rgba(126, 142, 177, 0.3);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.1rem 0.5rem 0 rgba(126, 142, 177, 0.3);
   margin-top: 1.4rem;
-  padding: 2.55rem 2.55rem .5rem 2.55rem;
+  padding: 2.55rem 2.55rem 0.5rem 2.55rem;
   position: relative;
 }
 
@@ -16,27 +16,20 @@
 
 .table-box__table {
   min-height: 362px;
-  height: calc(100vh - 415px);
+  height: calc(100vh - 41.5rem);
   overflow-x: auto;
   overflow-y: auto;
 }
 
-@media screen and (max-width: 370px),
-  (min-width: 550px) and (max-width: 600px) {
+@media screen and (max-width: 374px) {
   .table-box__heading {
     flex-direction: column;
     align-items: stretch;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
   .table-box {
     padding: 2.55rem 1rem;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .table-box {
-    margin-bottom: 1.4rem;
   }
 }

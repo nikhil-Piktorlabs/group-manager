@@ -12,3 +12,10 @@
 .pagination__btn--active {
   color: var(--color-heading);
 }
+
+.pagination__goto {
+  width: 2.74rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+  border: solid 0.1rem #979797;
+}

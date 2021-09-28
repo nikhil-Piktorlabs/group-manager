@@ -1,11 +1,11 @@
 .card {
   align-items: center;
   background: #fff;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem .5rem;
-  width: 20rem;
+  padding: 1.5rem 0.5rem;
+  width: 21rem;
 }
 
 .card__image {
@@ -26,7 +26,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 100%;
+  width: 12rem;
 }
 
 .card__text--primary {
@@ -38,33 +38,8 @@
   opacity: 0.5;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
   .card {
     width: calc(100% - 10px);
-  }
-}
-
-@media screen and (min-width: 655px) {
-  .card {
-    width: calc(100% - 15px);
-  }
-}
-
-@media screen and (min-width: 1900px) {
-  .card {
-    width: calc(100% - 20px);
-  }
-}
-
-
-@media screen and (min-width: 3000px) {
-  .card {
-    width: calc(100% - 40px);
-  }
-}
-
-@media screen and (min-width: 4000px) {
-  .card {
-    width: calc(100% - 50px);
   }
 }
