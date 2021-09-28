@@ -23,11 +23,40 @@ const PacksTable = () => {
   const [currentPage, setPage] = useState(1);
   const [sortColumn, setSortColumn] = useState({ path: "name", order: "asc" });
   const [searchQuery, setSearchQuery] = useState("");
+  const [check, setCheck] = useState(false);
+  const [checkArray, setCheckArray] = useState(
+    new Array(packs.length).fill(false)
+  );
+
+  function handleAllCheck() {
+    setCheckArray(new Array(packs.length).fill(!check));
+    setCheck((c) => !c);
+  }
+
+  function handleSingleCheck(i) {
+    let newArray = [...checkArray];
+    newArray[i] = !checkArray[i];
+    setCheckArray(newArray);
+  }
 
   const columns = [
     {
-      label: <input className="checkbox" type="checkbox" />,
-      content: <input className="checkbox" type="checkbox" />,
+      label: (
+        <input
+          className="checkbox"
+          type="checkbox"
+          checked={check}
+          onChange={() => handleAllCheck()}
+        />
+      ),
+      content: (i) => (
+        <input
+          className="checkbox"
+          type="checkbox"
+          checked={checkArray[i]}
+          onChange={() => handleSingleCheck(i)}
+        />
+      ),
       checkbox: true,
       center: true,
     },
@@ -36,7 +65,7 @@ const PacksTable = () => {
     { path: "createdOn", label: "CREATED ON" },
     {
       label: "ACTIONS",
-      content: <button className="btn btn--block">+ Join</button>,
+      content: () => <button className="btn btn--block">+ Join</button>,
       center: true,
     },
   ];

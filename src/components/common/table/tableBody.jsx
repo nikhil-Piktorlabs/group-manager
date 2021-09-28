@@ -4,8 +4,8 @@ import user from "../../../images/user.png";
 import groupLogo from "../../../images/groupLogo.png";
 import packLogo from "../../../images/packLogo.png";
 
-function renderCell(item, column) {
-  if (column.content) return column.content;
+function renderCell(item, column, index) {
+  if (column.content) return column.content(index);
 
   if (column.link1)
     return (
@@ -36,7 +36,7 @@ function renderImage(column) {
 const TableBody = ({ data, columns }) => {
   return (
     <tbody className="table__body">
-      {data.map((item) => (
+      {data.map((item, i) => (
         <tr className="table__row" key={item.id}>
           {columns.map((column, index) => (
             <td
@@ -46,7 +46,7 @@ const TableBody = ({ data, columns }) => {
               }${column.checkbox ? " table__cell--small" : ""}`}
             >
               {renderImage(column)}
-              {renderCell(item, column)}
+              {renderCell(item, column, i)}
             </td>
           ))}
         </tr>

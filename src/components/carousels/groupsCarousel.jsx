@@ -7,11 +7,13 @@ const GroupsCarousel = ({ data }) => {
   const carouselRef = useRef(null);
 
   const scrollLeft = debounce(function () {
-    carouselRef.current.scrollLeft -= 160;
+    const fontSize = window.getComputedStyle(carouselRef.current).fontSize;
+    carouselRef.current.scrollLeft -= 16 * parseFloat(fontSize);
   }, 300);
 
   const scrollRight = debounce(function () {
-    carouselRef.current.scrollLeft += 160;
+    const fontSize = window.getComputedStyle(carouselRef.current).fontSize;
+    carouselRef.current.scrollLeft += 16 * parseFloat(fontSize);
   }, 300);
 
   return (

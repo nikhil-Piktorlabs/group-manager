@@ -75,7 +75,11 @@
   }
 
   .topbar__start {
+    padding-left: 2rem;
+  }
+
+  .topbar__start h2,
+  .topbar__user {
     display: none;
-    padding-left: 0;
   }
 }

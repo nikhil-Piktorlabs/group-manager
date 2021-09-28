@@ -30,7 +30,7 @@ html {
 
 @media screen and (min-width: 800px) and (min-height: 1000px) and (max-width: 1800px) {
   html {
-    font-size: 80%;
+    font-size: 90%;
   }
 }
 
@@ -126,36 +126,26 @@ hr {
 /* Button */
 
 .btn {
-  background: #fff;
-  border: solid 0.1rem;
-  color: var(--color-heading);
   cursor: pointer;
-  transition: 0.5s;
 }
 
 .btn--block {
+  background: #fff;
+  border: solid 0.1rem;
+  color: var(--color-heading);
   border-radius: 0.3rem;
   font-weight: bold;
   padding: 0.6rem 2.2rem 0.5rem 2.31rem;
   font-size: 1.2rem;
+  transition: 0.5s;
 }
 
-.btn--circle {
-  align-items: center;
-  border-radius: 100%;
-  display: flex;
+.btn--image {
   height: 2rem;
-  justify-content: center;
   width: 2rem;
 }
 
-.btn__text {
-  font-family: "Monospace";
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.btn:hover {
+.btn--block:hover {
   color: #fff;
   background: var(--color-heading);
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./card.css";
 import groupLogo from "../../images/groupLogo.png";
+import plusIcon from "../../images/plus.png";
 
 const Card = ({ item, scroll }) => {
   return (
@@ -10,9 +11,7 @@ const Card = ({ item, scroll }) => {
         <span className="card__text card__text--primary">{item.name}</span>
         <span className="card__text card__text--secondary">{item.owner}</span>
       </div>
-      <button className="btn btn--circle">
-        <span className="btn__text">+</span>
-      </button>
+      <img className="btn btn--image" src={plusIcon} alt="..." />
     </div>
   );
 };

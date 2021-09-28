@@ -26,5 +26,6 @@
 
   .sidebar--expanded {
     left: 0;
+    overflow-y: scroll;
   }
 }

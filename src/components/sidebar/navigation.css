@@ -10,7 +10,7 @@
   cursor: pointer;
   display: flex;
   margin: 0 -1rem;
-  padding: 1.3rem 0rem 1.3rem 2.0rem;
+  padding: 1.3rem 0rem 1.3rem 2rem;
   text-decoration: none;
 }
 
@@ -26,4 +26,10 @@
 
 .navigation__text {
   margin-left: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    margin-bottom: 6rem;
+  }
 }
