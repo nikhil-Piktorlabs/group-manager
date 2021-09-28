@@ -43,3 +43,9 @@
     width: calc(100% - 10px);
   }
 }
+
+@media screen and (min-width: 611px) and (max-width: 1500px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+}

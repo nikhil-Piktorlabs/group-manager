@@ -48,10 +48,10 @@ const ButtonGroup = ({ next, previous }) => {
       <h4>RECOMMENDED GROUPS</h4>
       <span>
         <button className="carousel__button" onClick={() => previous()}>
-          <i className="fa fa-angle-left fa-lg" aria-hidden="true"></i>
+          <i className="fa fa-angle-left" aria-hidden="true"></i>
         </button>
         <button className="carousel__button" onClick={() => next()}>
-          <i className="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+          <i className="fa fa-angle-right" aria-hidden="true"></i>
         </button>
       </span>
     </header>

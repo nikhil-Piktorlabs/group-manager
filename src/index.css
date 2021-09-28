@@ -18,7 +18,7 @@ html {
 
 @media screen and (min-width: 2300px) {
   html {
-    font-size: 100%;
+    font-size: 95%;
   }
 }
 
@@ -48,23 +48,23 @@ html {
 
 @media screen and (min-width: 6000px) {
   html {
-    font-size: 250%;
+    font-size: 260%;
   }
 }
 
-@media screen and (min-height: 1500px) {
+@media screen and (min-height: 1500px) and (max-width: 2000px) {
   html {
     font-size: 110%;
   }
 }
 
-@media screen and (min-height: 2000px) {
+@media screen and (min-height: 2000px) and (max-width: 3000px) {
   html {
-    font-size: 170%;
+    font-size: 150%;
   }
 }
 
-@media screen and (min-height: 3000px) {
+@media screen and (min-height: 3000px) and (max-width: 4000px) {
   html {
     font-size: 220%;
   }
@@ -144,14 +144,14 @@ hr {
   align-items: center;
   border-radius: 100%;
   display: flex;
-  height: 2.5rem;
+  height: 2rem;
   justify-content: center;
-  width: 2.5rem;
+  width: 2rem;
 }
 
 .btn__text {
   font-family: "Monospace";
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -274,4 +274,11 @@ hr {
 
 .grid__topbar {
   grid-column: 1 / 3;
+}
+
+/* font-awesome */
+
+.fa-angle-left,
+.fa-angle-right {
+  font-size: 1.2rem !important;
 }
